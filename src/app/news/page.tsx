@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { newsItems, type NewsItem } from '@/lib/newsData';
+import { newsItems, type NewsItem } from '@/lib/newsData.tsx';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Newspaper, MessageSquare, Calculator, FileText } from 'lucide-react';

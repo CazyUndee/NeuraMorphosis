@@ -1,5 +1,5 @@
 
-import { newsItems, type NewsItem } from '@/lib/newsData';
+import { newsItems, type NewsItem } from '@/lib/newsData.tsx';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { notFound } from 'next/navigation';
