@@ -8,7 +8,7 @@ import { MessageSquare, Calculator, Construction, Brain, Lightbulb, Zap, Mail } 
 const applications = [
   {
     title: 'NeuraMorphosis Chat',
-    description: 'Chat with our intelligent AI! Get instant answers, spark new ideas, and enjoy helpful conversations.',
+    description: "Engage with NeuraMorphosis Chat, your intelligent AI companion! Experience natural, multi-turn conversations, get instant answers to your queries, and let its broad knowledge base help you brainstorm new ideas or assist with tasks. It's designed for intuitive interaction and real-time support.",
     icon: MessageSquare,
     tryLink: 'https://neuramorph.vercel.app',
     learnMoreLink: '/chat',
