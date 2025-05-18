@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap } from 'lucide-react';
+import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -19,14 +19,12 @@ export default function HomePage() {
         </p>
         <div className="mt-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
           <Button size="lg" asChild>
-            {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
-            <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">
+            <a href="https://neuramorph.vercel.app" target="_blank" rel="noopener noreferrer">
               NeuraMorphosis Chat <MessageSquare className="ml-2 h-5 w-5" />
             </a>
           </Button>
           <Button size="lg" variant="secondary" asChild>
-            {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
-            <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">
+            <a href="https://calcai-alpha.vercel.app" target="_blank" rel="noopener noreferrer">
               CalcAI <Calculator className="ml-2 h-5 w-5" />
             </a>
           </Button>
@@ -62,8 +60,7 @@ export default function HomePage() {
             <CardContent className="mt-auto pt-4">
               <div className="flex flex-col sm:flex-row gap-2">
                 <Button asChild className="w-full sm:flex-1">
-                  {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
-                  <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
+                  <a href="https://neuramorph.vercel.app" target="_blank" rel="noopener noreferrer">Try Now</a>
                 </Button>
                 <Button asChild className="w-full sm:flex-1" variant="outline">
                   <Link href="/chat">Learn More</Link>
@@ -83,8 +80,7 @@ export default function HomePage() {
             <CardContent className="mt-auto pt-4">
               <div className="flex flex-col sm:flex-row gap-2">
                 <Button asChild className="w-full sm:flex-1">
-                  {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
-                  <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
+                  <a href="https://calcai-alpha.vercel.app" target="_blank" rel="noopener noreferrer">Try Now</a>
                 </Button>
                 <Button asChild className="w-full sm:flex-1" variant="outline">
                   <Link href="/calculator">Learn More</Link>

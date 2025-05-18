@@ -48,8 +48,7 @@ export default function CalculatorInfoPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6">
             <Button asChild size="lg" className="flex-1">
-              {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
-              <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+              <a href="https://calcai-alpha.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                 <CalculatorIcon className="mr-2 h-5 w-5" /> Try CalcAI Now
               </a>
             </Button>
