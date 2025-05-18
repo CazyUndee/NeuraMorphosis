@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper, Construction } from 'lucide-react';
+import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper, Construction, Mail } from 'lucide-react';
 
 const applications = [
   {
@@ -56,7 +56,6 @@ export default function HomePage() {
             <Link href="/editor">Morph Editor (Coming Soon) <FileText className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
-        {/* Placeholder image removed from here */}
       </section>
 
       {/* Features Section */}
@@ -124,9 +123,12 @@ export default function HomePage() {
       
       {/* Contact Section Placeholder */}
       <section id="contact" className="py-12 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-foreground">Get in Touch</h2>
-        <p className="text-lg text-muted-foreground mb-6">
-          Have questions or want to learn more? We'd love to hear from you.
+        <div className="flex justify-center items-center mb-6">
+          <Mail className="h-10 w-10 text-primary mr-3" />
+          <h2 className="text-3xl font-bold text-foreground">Get in Touch</h2>
+        </div>
+        <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+          We're excited to hear from you! Whether you have questions, ideas, or just want to connect, feel free to reach out.
         </p>
         <Button size="lg" variant="outline" asChild>
           <a href="mailto:contact.neuramorphosis@gmail.com">contact.neuramorphosis@gmail.com</a>
