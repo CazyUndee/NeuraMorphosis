@@ -23,7 +23,7 @@ const applications = [
   {
     title: 'Morph Editor',
     description: 'A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!',
-    icon: FileText, // Or Construction if preferred for "Coming Soon"
+    icon: Construction, // Or FileText if preferred
     tryLink: null,
     learnMoreLink: '/editor',
   },
@@ -78,7 +78,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center text-primary mb-2">
                   <app.icon className="h-10 w-10 mr-3 flex-shrink-0" />
-                  <CardTitle className="text-2xl break-words">{app.title}</CardTitle>
+                  <CardTitle className="text-2xl break-words min-w-0">{app.title}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
