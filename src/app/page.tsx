@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper } from 'lucide-react';
+import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper, Construction } from 'lucide-react';
 
 const applications = [
   {
@@ -23,7 +23,7 @@ const applications = [
   {
     title: 'Morph Editor',
     description: 'A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!',
-    icon: FileText,
+    icon: FileText, // Or Construction if preferred for "Coming Soon"
     tryLink: null,
     learnMoreLink: '/editor',
   },
@@ -78,14 +78,14 @@ export default function HomePage() {
               <CardHeader>
                 <div className="flex items-center text-primary mb-2">
                   <app.icon className="h-10 w-10 mr-3 flex-shrink-0" />
-                  <CardTitle className="text-2xl">{app.title}</CardTitle>
+                  <CardTitle className="text-2xl break-words">{app.title}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
                 <CardDescription>{app.description}</CardDescription>
               </CardContent>
               <CardFooter className="pt-4">
-                <div className="flex flex-col sm:flex-row gap-2 w-full">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 w-full">
                   {app.tryLink && (
                     <Button asChild className="w-full sm:flex-1">
                       <a href={app.tryLink} target="_blank" rel="noopener noreferrer">Try Now</a>
