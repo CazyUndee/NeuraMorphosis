@@ -15,14 +15,14 @@ const applications = [
   },
   {
     title: 'CalcAI',
-    description: 'Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.',
+    description: 'Unlock complex mathematical problems with CalcAI. This intelligent assistant provides clear, step-by-step explanations using advanced AI algorithms, making even challenging concepts more accessible and understandable for learners of all levels.',
     icon: Calculator,
     tryLink: 'https://calcai-alpha.vercel.app',
     learnMoreLink: '/calculator',
   },
   {
     title: 'Morph Editor',
-    description: 'A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!',
+    description: 'Discover Morph Editor, a next-generation markdown tool designed for a seamless writing experience. Enjoy live previews and intuitive syntax highlighting. AI-powered content suggestions and smart assistance features are coming soon to enhance your productivity!',
     icon: Construction,
     tryLink: null,
     learnMoreLink: '/editor',
