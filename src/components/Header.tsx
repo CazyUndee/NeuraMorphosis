@@ -6,13 +6,12 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Logo } from '@/components/icons/Logo';
-import { useIsMobile } from '@/hooks/use-mobile'; // Assuming this hook exists and works
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const navItems = [
   { href: '/', label: 'Home' },
-  { href: '/chat', label: 'AI Chat' },
-  { href: '/calculator', label: 'AI Calculator' },
-  { href: '/editor', label: 'MD Editor' },
+  // AI Chat and AI Calculator removed as they are external projects now, linked from homepage
+  { href: '/editor', label: 'MD Editor (Soon)' },
 ];
 
 export function Header() {
