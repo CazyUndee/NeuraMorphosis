@@ -25,7 +25,7 @@ export default function NewsPage() {
                 <MessageSquare className="h-10 w-10 mr-3" />
                 <CardTitle className="text-2xl">NeuraMorphosis Chat v1 Launched!</CardTitle>
               </div>
-              <p className="text-sm text-muted-foreground">November 15, 2023</p> 
+              <p className="text-sm text-muted-foreground">May 18, 2025</p> 
             </CardHeader>
             <CardContent className="flex-grow">
               <p className="text-muted-foreground">
@@ -40,7 +40,7 @@ export default function NewsPage() {
                 <Calculator className="h-10 w-10 mr-3" />
                 <CardTitle className="text-2xl">CalcAI v1 is Here!</CardTitle>
               </div>
-              <p className="text-sm text-muted-foreground">October 28, 2023</p> 
+              <p className="text-sm text-muted-foreground">May 18, 2025</p> 
             </CardHeader>
             <CardContent className="flex-grow">
               <p className="text-muted-foreground">
