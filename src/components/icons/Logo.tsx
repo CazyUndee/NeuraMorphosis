@@ -15,7 +15,7 @@ export function Logo({ className, ...divProps }: LogoProps) {
       {...divProps} // Other div attributes like id, style, etc.
     >
       {/* Brain icon's styling is self-contained */}
-      <Brain className="h-8 w-8 text-indigo-500 mr-6" /> {/* Explicit size, color, and right margin */}
+      <Brain className="h-8 w-8 text-indigo-500 mr-2" /> {/* Explicit size, color, and right margin */}
       <span className="text-2xl font-bold">
         <span className="bg-gradient-to-r from-indigo-500 to-primary text-transparent bg-clip-text">
           NeuraMorphosis

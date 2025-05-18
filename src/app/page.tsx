@@ -3,12 +3,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper, Construction, Mail } from 'lucide-react';
+import { MessageSquare, Calculator, Construction, Brain, Lightbulb, Zap, Mail } from 'lucide-react';
 
 const applications = [
   {
     title: 'NeuraMorphosis Chat',
-    description: 'An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.',
+    description: 'Chat with our intelligent AI! Get instant answers, spark new ideas, and enjoy helpful conversations.',
     icon: MessageSquare,
     tryLink: 'https://neuramorph.vercel.app',
     learnMoreLink: '/chat',
@@ -23,7 +23,7 @@ const applications = [
   {
     title: 'Morph Editor',
     description: 'A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!',
-    icon: Construction, // Or FileText if preferred
+    icon: Construction,
     tryLink: null,
     learnMoreLink: '/editor',
   },
@@ -53,7 +53,7 @@ export default function HomePage() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/editor">Morph Editor (Coming Soon) <FileText className="ml-2 h-5 w-5" /></Link>
+            <Link href="/editor">Morph Editor (Coming Soon) <Construction className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
       </section>
