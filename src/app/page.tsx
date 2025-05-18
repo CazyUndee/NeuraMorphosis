@@ -11,11 +11,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="text-center py-12 md:py-20">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground">
-          Neura<span className="text-primary">Morphosis</span> Hub
+          Neura<span className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Morphosis</span>
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground">
           Welcome to NeuraMorphosis! We specialize in creating cutting-edge, AI-powered solutions to enhance productivity and spark innovation.
-          This hub is your gateway to our latest tools and applications.
+          This is your gateway to our latest tools and applications.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button size="lg" asChild>
@@ -36,11 +36,11 @@ export default function HomePage() {
         </div>
         <div className="mt-12 relative aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
           <Image 
-            src="https://placehold.co/1200x675/333333/8C52FF.png" 
-            alt="Abstract AI Hub visualization" 
+            src="https://placehold.co/1200x675.png" 
+            alt="Abstract AI visualization" 
             layout="fill"
             objectFit="cover"
-            data-ai-hint="abstract hub"
+            data-ai-hint="abstract ai"
             priority
           />
            <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
