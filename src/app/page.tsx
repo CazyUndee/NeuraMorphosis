@@ -17,7 +17,7 @@ export default function HomePage() {
           Welcome to NeuraMorphosis! We specialize in creating cutting-edge, AI-powered solutions to enhance productivity and spark innovation.
           This is your gateway to our latest tools and applications.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="mt-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
           <Button size="lg" asChild>
             {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
             <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">
