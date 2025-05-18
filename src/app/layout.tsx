@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Inter, Geist_Mono } from 'next/font/google';
 import './globals.css';
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'NeuraMorphosis',
-  description: 'NeuraMorphosis specializes in AI, offering links to an AI Chat App, an AI Calculator, and an upcoming MD Editor.',
+  description: 'NeuraMorphosis specializes in AI, offering links to an AI Chat App, CalcAI, and an upcoming Morph Editor.',
 };
 
 export default function RootLayout({

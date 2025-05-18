@@ -4,7 +4,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Construction, Sparkles, Eye, Code, BrainCircuit } from 'lucide-react';
 
-export default function MDEditorComingSoonPage() {
+export default function MorphEditorComingSoonPage() {
   return (
     <div className="max-w-4xl mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-15rem)] py-10">
       <Card className="shadow-xl w-full text-center bg-card/80 backdrop-blur-sm flex flex-col flex-grow">
@@ -13,7 +13,7 @@ export default function MDEditorComingSoonPage() {
             <Construction className="h-20 w-20 text-primary animate-bounce" />
           </div>
           <CardTitle className="text-4xl font-bold text-primary mb-2">
-            Our Next-Gen MD Editor is Brewing!
+            Our Next-Gen Morph Editor is Brewing!
           </CardTitle>
           <CardDescription className="text-lg sm:text-xl mt-3 max-w-2xl mx-auto">
             Get ready for a revolutionary Markdown editing experience! We're meticulously crafting a powerful tool designed to supercharge your writing and documentation workflow.
@@ -59,7 +59,7 @@ export default function MDEditorComingSoonPage() {
           <div className="mt-12">
             <p className="text-xl text-foreground font-semibold">We're pouring all our expertise into this editor!</p>
             <p className="text-lg text-muted-foreground mt-2">
-              Expect a seamless, powerful, and inspiring Markdown experience.
+              Expect a seamless, powerful, and inspiring Markdown experience with Morph Editor.
             </p>
             <div className="mt-8 flex justify-center items-center space-x-2">
               <Sparkles className="h-10 w-10 text-primary animate-pulse" />

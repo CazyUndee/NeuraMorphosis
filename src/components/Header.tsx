@@ -1,17 +1,17 @@
+
 'use client';
 
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Logo } from '@/components/icons/Logo';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const navItems = [
   { href: '/', label: 'Home' },
-  // AI Chat and AI Calculator removed as they are external projects now, linked from homepage
-  { href: '/editor', label: 'MD Editor (Soon)' },
+  { href: '/editor', label: 'Morph Editor (Soon)' },
 ];
 
 export function Header() {
@@ -44,19 +44,16 @@ export function Header() {
 
         {isMobile ? (
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
+            <Button variant="ghost" size="icon" onClick={() => setIsOpen(true)}>
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Open menu</span>
+            </Button>
             <SheetContent side="right" className="w-full bg-background p-6">
-              <SheetHeader className="mb-6 flex justify-start items-center"> {/* Changed justify-between to justify-start */}
-                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <SheetHeader className="mb-6 flex justify-start items-center">
                 <Link href="/" onClick={() => setIsOpen(false)}>
                    <Logo className="h-7 w-auto" />
                 </Link>
-                {/* The SheetClose button that was here has been removed */}
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col space-y-3">
                 <NavLinks onItemClick={() => setIsOpen(false)} />

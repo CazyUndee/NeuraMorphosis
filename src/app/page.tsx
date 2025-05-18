@@ -31,15 +31,15 @@ export default function HomePage() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/editor">MD Editor (Coming Soon) <Construction className="ml-2 h-5 w-5" /></Link>
+            <Link href="/editor">Morph Editor (Coming Soon) <Construction className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
         <div className="mt-12 relative aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
           <Image 
             src="https://placehold.co/1200x675.png" 
             alt="Abstract AI visualization" 
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{objectFit: "cover"}}
             data-ai-hint="abstract ai"
             priority
           />
@@ -87,7 +87,7 @@ export default function HomePage() {
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <FileText className="h-10 w-10 mr-3" />
-                <CardTitle className="text-2xl">MD Editor</CardTitle>
+                <CardTitle className="text-2xl">Morph Editor</CardTitle>
               </div>
               <CardDescription>A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!</CardDescription>
             </CardHeader>
