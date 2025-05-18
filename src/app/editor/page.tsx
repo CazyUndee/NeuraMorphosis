@@ -2,73 +2,98 @@
 'use client';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Construction, Sparkles, Eye, Code, BrainCircuit } from 'lucide-react';
+import { Construction, Sparkles, Eye, Code, BrainCircuit, BookOpen } from 'lucide-react';
 
-export default function MorphEditorComingSoonPage() {
+export default function MorphEditorDocumentationPage() {
   return (
-    <div className="max-w-4xl mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-15rem)] py-10">
-      <Card className="shadow-xl w-full text-center bg-card/80 backdrop-blur-sm flex flex-col flex-grow">
-        <CardHeader className="pb-4">
-           <div className="flex items-center justify-center mb-6">
-            <Construction className="h-20 w-20 text-primary animate-bounce" />
-          </div>
-          <CardTitle className="text-4xl font-bold text-primary mb-2">
-            Our Next-Gen Morph Editor is Brewing!
-          </CardTitle>
-          <CardDescription className="text-lg sm:text-xl mt-3 max-w-2xl mx-auto">
-            Get ready for a revolutionary Markdown editing experience! We're meticulously crafting a powerful tool designed to supercharge your writing and documentation workflow.
+    <div className="max-w-5xl mx-auto flex flex-col min-h-[calc(100vh-15rem)] py-10 space-y-12">
+      <header className="text-center">
+        <div className="flex items-center justify-center mb-6">
+          <BookOpen className="h-16 w-16 text-primary mr-4" />
+          <Construction className="h-20 w-20 text-accent animate-bounce" />
+        </div>
+        <h1 className="text-4xl font-bold text-primary mb-3">
+          Morph Editor - Feature Overview (Coming Soon!)
+        </h1>
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+          Welcome to the future of Markdown editing! Morph Editor is being meticulously crafted to provide a seamless, powerful, and AI-enhanced writing experience. Below is a sneak peek at the features we're building.
+        </p>
+      </header>
+
+      <Card className="shadow-xl bg-card/80 backdrop-blur-sm">
+        <CardHeader>
+          <CardTitle className="text-2xl text-primary">Introduction (Planned)</CardTitle>
+          <CardDescription>
+            Morph Editor aims to revolutionize your documentation and content creation workflow. Our goal is to blend intuitive design with cutting-edge AI to help you write better, faster.
           </CardDescription>
         </CardHeader>
-        <CardContent className="pt-2 flex flex-col flex-grow justify-around">
-          <div className="mt-6 space-y-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Here's a Sneak Peek of What's Coming:</h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-              <div className="p-6 bg-background/50 rounded-lg shadow-md hover:shadow-primary/20 transition-shadow">
-                <div className="flex items-center mb-3">
-                  <Eye className="h-8 w-8 text-accent mr-3" />
-                  <h4 className="text-xl font-semibold text-foreground">Live Preview Perfected</h4>
-                </div>
-                <p className="text-muted-foreground">
-                  No more guessing! See your Markdown render into beautiful HTML in real-time, side-by-side, as you type.
-                </p>
-              </div>
-
-              <div className="p-6 bg-background/50 rounded-lg shadow-md hover:shadow-primary/20 transition-shadow">
-                <div className="flex items-center mb-3">
-                  <Code className="h-8 w-8 text-accent mr-3" />
-                  <h4 className="text-xl font-semibold text-foreground">Crystal-Clear Syntax</h4>
-                </div>
-                <p className="text-muted-foreground">
-                  Enjoy vibrant and intuitive syntax highlighting for both Markdown and embedded code blocks, making your content easy to read and edit.
-                </p>
-              </div>
-              
-              <div className="p-6 bg-background/50 rounded-lg shadow-md hover:shadow-primary/20 transition-shadow">
-                <div className="flex items-center mb-3">
-                  <BrainCircuit className="h-8 w-8 text-accent mr-3" />
-                  <h4 className="text-xl font-semibold text-foreground">AI-Powered Assistance</h4>
-                </div>
-                <p className="text-muted-foreground">
-                  Unlock your creative potential with intelligent, AI-driven suggestions, rephrasing, summarization, and even content generation prompts!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <p className="text-xl text-foreground font-semibold">We're pouring all our expertise into this editor!</p>
-            <p className="text-lg text-muted-foreground mt-2">
-              Expect a seamless, powerful, and inspiring Markdown experience with Morph Editor.
-            </p>
-            <div className="mt-8 flex justify-center items-center space-x-2">
-              <Sparkles className="h-10 w-10 text-primary animate-pulse" />
-              <p className="text-2xl font-bold text-primary">Stay Tuned for Launch!</p>
-              <Sparkles className="h-10 w-10 text-primary animate-pulse" />
-            </div>
-          </div>
+        <CardContent>
+          <p className="text-muted-foreground">
+            This section will provide a comprehensive introduction to Morph Editor, its philosophy, and how to get started once it's launched.
+          </p>
         </CardContent>
       </Card>
+
+      <section>
+        <h2 className="text-3xl font-semibold text-foreground mb-8 text-center">Core Features (Under Development)</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow flex flex-col">
+            <CardHeader>
+              <div className="flex items-center mb-3">
+                <Eye className="h-10 w-10 text-accent mr-3" />
+                <CardTitle className="text-xl">Real-time Live Preview</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-muted-foreground">
+                Instantly see your Markdown render into beautiful HTML as you type. Our side-by-side preview will ensure what you see is what you get, eliminating guesswork and speeding up your writing process.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow flex flex-col">
+            <CardHeader>
+              <div className="flex items-center mb-3">
+                <Code className="h-10 w-10 text-accent mr-3" />
+                <CardTitle className="text-xl">Advanced Syntax Highlighting</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-muted-foreground">
+                Enjoy vibrant and intuitive syntax highlighting for Markdown and embedded code blocks. Clear visual distinctions will make your content easy to read, write, and debug.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="shadow-lg hover:shadow-primary/20 transition-shadow flex flex-col">
+            <CardHeader>
+              <div className="flex items-center mb-3">
+                <BrainCircuit className="h-10 w-10 text-accent mr-3" />
+                <CardTitle className="text-xl">AI-Powered Assistant</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-muted-foreground">
+                Unlock your creative potential with an intelligent AI assistant. Expect features like smart suggestions, rephrasing, summarization, grammar correction, and even content generation prompts!
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <div className="text-center mt-12 py-8 bg-card/50 rounded-lg shadow-md">
+        <p className="text-xl text-foreground font-semibold">
+          We're pouring all our expertise into Morph Editor!
+        </p>
+        <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
+          This page will evolve into comprehensive documentation upon launch. Expect detailed guides, API references (if applicable), and best practices.
+        </p>
+        <div className="mt-8 flex justify-center items-center space-x-2">
+          <Sparkles className="h-10 w-10 text-primary animate-pulse" />
+          <p className="text-2xl font-bold text-primary">Stay Tuned for Launch!</p>
+          <Sparkles className="h-10 w-10 text-primary animate-pulse" />
+        </div>
+      </div>
     </div>
   );
 }

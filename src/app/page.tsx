@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Construction } from 'lucide-react';
+import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -31,7 +31,7 @@ export default function HomePage() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/editor">Morph Editor (Coming Soon) <Construction className="ml-2 h-5 w-5" /></Link>
+            <Link href="/editor">Morph Editor (Coming Soon) <FileText className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
         <div className="mt-12 relative aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
@@ -126,6 +126,30 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* News Section */}
+      <section id="news" className="py-12">
+        <div className="container mx-auto px-6 md:px-12 text-center">
+          <h2 className="text-3xl font-bold mb-10 text-foreground">Latest Updates from NeuraMorphosis</h2>
+          <div className="max-w-2xl mx-auto">
+            <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex items-center justify-center text-primary mb-2">
+                  <Newspaper className="h-10 w-10 mr-3" />
+                  <CardTitle className="text-2xl">Stay Tuned!</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  We're hard at work on exciting new features and products. The Morph Editor is evolving, and other AI innovations are on the horizon. 
+                  Check back here for our first official news update soon!
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          {/* Future news items can be added here as more Card components */}
         </div>
       </section>
       
