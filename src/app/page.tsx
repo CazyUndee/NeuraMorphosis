@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -13,7 +14,8 @@ export default function HomePage() {
           Neura<span className="text-primary">Morphosis</span> Hub
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground">
-          A central hub showcasing our latest projects. Explore cutting-edge AI-powered tools and creative applications.
+          Welcome to NeuraMorphosis! We specialize in creating cutting-edge, AI-powered solutions to enhance productivity and spark innovation.
+          This hub is your gateway to our latest projects and tools.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button size="lg" asChild>
