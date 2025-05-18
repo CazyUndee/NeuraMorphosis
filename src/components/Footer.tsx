@@ -12,9 +12,9 @@ const footerNavItems = [
 ];
 
 const legalLinks = [
-  { href: '#', label: 'Privacy Policy' },
-  { href: '#', label: 'Cookie Policy' },
-  { href: '#', label: 'Terms of Service' },
+  { href: '/legal/privacy-policy', label: 'Privacy Policy' },
+  { href: '/legal/cookie-policy', label: 'Cookie Policy' },
+  { href: '/legal/terms-of-service', label: 'Terms of Service' },
 ];
 
 export function Footer() {
