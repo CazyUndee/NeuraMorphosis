@@ -50,7 +50,7 @@ export function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[280px] bg-background p-6">
+            <SheetContent side="right" className="w-full bg-background p-6">
               <div className="mb-6 flex justify-start items-center"> {/* Changed justify-between to justify-start */}
                 <Link href="/" onClick={() => setIsOpen(false)}>
                    <Logo className="h-7 w-auto" />
