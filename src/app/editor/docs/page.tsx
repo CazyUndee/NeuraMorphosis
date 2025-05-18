@@ -103,11 +103,11 @@ export default function MorphEditorTechnicalDocumentationPage() {
           </CardHeader>
           <CardContent className="space-y-6 text-muted-foreground">
             <div>
-              <h4 className="font-semibold text-foreground mb-1">1. Smart Suggestions & Autocompletion:</h4>
+              <h4 className="font-semibold text-foreground mb-1">1. Smart Suggestions &amp; Autocompletion:</h4>
               <p>Context-aware suggestions as the user types. This could include completing common Markdown structures, suggesting relevant links (hypothetical, would require indexing/knowledge), or offering boilerplate text for sections.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-foreground mb-1">2. Rephrasing & Tone Adjustment:</h4>
+              <h4 className="font-semibold text-foreground mb-1">2. Rephrasing &amp; Tone Adjustment:</h4>
               <p>Users can select text and request the AI to rephrase it for clarity, conciseness, or to adopt a different tone (e.g., formal, casual, persuasive). This will involve a Genkit flow that takes the selected text and a target tone as input.</p>
               <p><em>Example Flow Input:</em> <code>{`{ text: "The system is totally busted.", tone: "formal" }`}</code></p>
               <p><em>Example Flow Output:</em> <code>{`{ rephrasedText: "The system is currently experiencing operational difficulties." }`}</code></p>
@@ -117,7 +117,7 @@ export default function MorphEditorTechnicalDocumentationPage() {
               <p>Ability to select a long passage or an entire document and generate a concise summary. Useful for creating abstracts or quickly understanding large texts.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-foreground mb-1">4. Grammar & Advanced Spell Check:</h4>
+              <h4 className="font-semibold text-foreground mb-1">4. Grammar &amp; Advanced Spell Check:</h4>
               <p>Go beyond basic browser spell check to identify complex grammatical errors, stylistic inconsistencies, and awkward phrasing using LLM capabilities.</p>
             </div>
             <div>
@@ -150,7 +150,7 @@ Focus on its purpose, key logic, and potential use cases.`}
         
         <Card className="shadow-md">
           <CardHeader>
-            <CardTitle className="text-2xl text-primary flex items-center"><Users className="mr-2 h-6 w-6" />User Interface & Experience (UX) Deep Dive</CardTitle>
+            <CardTitle className="text-2xl text-primary flex items-center"><Users className="mr-2 h-6 w-6" />User Interface &amp; Experience (UX) Deep Dive</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-muted-foreground">
             <ul className="list-disc list-inside ml-4 space-y-2">
@@ -170,7 +170,7 @@ Focus on its purpose, key logic, and potential use cases.`}
       <Card className="shadow-lg">
         <CardHeader>
           <CardTitle className="text-3xl text-primary flex items-center">
-            <ShieldCheck className="mr-3 h-8 w-8" /> Security & Data Privacy
+            <ShieldCheck className="mr-3 h-8 w-8" /> Security &amp; Data Privacy
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4 text-muted-foreground">
@@ -182,8 +182,12 @@ Focus on its purpose, key logic, and potential use cases.`}
             <li><strong>Local Processing:</strong> Where feasible, some simpler checks or transformations might be explored for client-side execution to avoid data transmission.</li>
             <li><strong>User Control:</strong> Clear options to enable/disable specific AI features.</li>
           </ul>
-          <AlertCircle className="inline-block mr-2 h-5 w-5 text-destructive" />
-          <span className="font-semibold text-destructive">Note:</span> Specific data handling policies will be fully detailed prior to launch.
+          <div className="mt-4 inline-flex items-center p-3 rounded-full bg-destructive/10 text-destructive text-sm">
+            <AlertCircle className="mr-2 h-5 w-5 flex-shrink-0" />
+            <div>
+                <span className="font-semibold">Note:</span> Specific data handling policies will be fully detailed prior to launch.
+            </div>
+          </div>
         </CardContent>
       </Card>
 
