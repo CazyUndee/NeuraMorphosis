@@ -13,7 +13,7 @@ export default function HomePage() {
           Neura<span className="text-primary">Morphosis</span> Hub
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground">
-          A central hub showcasing my latest projects. Explore cutting-edge AI-powered tools and creative applications.
+          A central hub showcasing our latest projects. Explore cutting-edge AI-powered tools and creative applications.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button size="lg" asChild>
@@ -47,7 +47,7 @@ export default function HomePage() {
 
       {/* Features Section */}
       <section id="features" className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-12 text-foreground">My Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
             <CardHeader>
@@ -106,21 +106,21 @@ export default function HomePage() {
             <Brain className="h-16 w-16 text-primary" />
           </div>
           <p className="max-w-3xl mx-auto text-lg text-muted-foreground leading-relaxed">
-            At NeuraMorphosis, I'm passionate about harnessing the power of artificial intelligence to build innovative and practical solutions. My mission is to empower individuals and businesses with smart tools that enhance efficiency, spark creativity, and unlock new possibilities in the digital age. I believe in the transformative potential of AI and am committed to developing ethical and user-centric technologies.
+            At NeuraMorphosis, we are passionate about harnessing the power of artificial intelligence to build innovative and practical solutions. Our mission is to empower individuals and businesses with smart tools that enhance efficiency, spark creativity, and unlock new possibilities in the digital age. We believe in the transformative potential of AI and are committed to developing ethical and user-centric technologies.
           </p>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             <div className="flex items-start space-x-4 p-6 bg-background rounded-lg">
               <Lightbulb className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">Innovation-Driven</h3>
-                <p className="text-muted-foreground">I constantly explore new frontiers in AI to bring you cutting-edge features and capabilities.</p>
+                <p className="text-muted-foreground">We constantly explore new frontiers in AI to bring you cutting-edge features and capabilities.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4 p-6 bg-background rounded-lg">
               <Zap className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">User-Focused</h3>
-                <p className="text-muted-foreground">My projects are designed with simplicity and usability in mind, ensuring a seamless experience.</p>
+                <p className="text-muted-foreground">Our projects are designed with simplicity and usability in mind, ensuring a seamless experience.</p>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function HomePage() {
       <section id="contact" className="py-12 text-center">
         <h2 className="text-3xl font-bold mb-6 text-foreground">Get in Touch</h2>
         <p className="text-lg text-muted-foreground mb-6">
-          Have questions or want to learn more? I'd love to hear from you.
+          Have questions or want to learn more? We'd love to hear from you.
         </p>
         <Button size="lg" variant="outline" asChild>
           <a href="mailto:contact@neuramorphosis.com">contact@neuramorphosis.com</a>

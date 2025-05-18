@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'NeuraMorphosis - AI Solutions',
-  description: 'NeuraMorphosis specializes in AI, offering an AI Chat App, AI Calculator, and an upcoming MD Editor.',
+  description: 'NeuraMorphosis specializes in AI, offering links to an AI Chat App, an AI Calculator, and an upcoming MD Editor.',
 };
 
 export default function RootLayout({

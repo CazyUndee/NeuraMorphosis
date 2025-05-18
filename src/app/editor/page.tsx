@@ -13,7 +13,7 @@ export default function MDEditorComingSoonPage() {
           </div>
           <CardTitle className="text-3xl font-bold text-primary">MD Editor - Coming Soon!</CardTitle>
           <CardDescription className="text-lg mt-2">
-            I'm currently working hard on building this powerful Markdown Editor.
+            We are currently working hard on building this powerful Markdown Editor.
             It will feature live preview, syntax highlighting, and AI-powered content suggestions.
           </CardDescription>
         </CardHeader>
