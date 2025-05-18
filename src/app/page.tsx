@@ -35,7 +35,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="text-center py-12 md:py-20">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground">
-          Neura<span className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Morphosis</span>
+          Neura<span className="bg-gradient-to-r from-indigo-500 to-primary text-transparent bg-clip-text">Morphosis</span>
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground">
           Welcome to NeuraMorphosis! We specialize in creating cutting-edge, AI-powered solutions to enhance productivity and spark innovation.
@@ -139,7 +139,7 @@ export default function HomePage() {
           Have questions or want to learn more? We'd love to hear from you.
         </p>
         <Button size="lg" variant="outline" asChild>
-          <a href="mailto:contact@neuramorphosis.com">contact@neuramorphosis.com</a>
+          <a href="mailto:contact.neuramorphosis@gmail.com">contact.neuramorphosis@gmail.com</a>
         </Button>
       </section>
     </div>
