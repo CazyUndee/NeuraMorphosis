@@ -1,48 +1,71 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Newspaper } from 'lucide-react';
+import { Newspaper, MessageSquare, Calculator, Zap } from 'lucide-react';
 
 export default function NewsPage() {
   return (
     <div className="py-12">
-      <div className="container mx-auto px-6 md:px-12 text-center">
-        <h1 className="text-4xl font-bold mb-12 text-foreground">
-          Latest Updates from NeuraMorphosis
-        </h1>
-        <div className="max-w-2xl mx-auto space-y-8">
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
+      <div className="container mx-auto px-6 md:px-12">
+        <header className="text-center mb-16">
+          <div className="flex items-center justify-center mb-6">
+            <Newspaper className="h-20 w-20 text-primary" />
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            Latest Updates from NeuraMorphosis
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Stay informed about our newest releases, feature updates, and company milestones.
+          </p>
+        </header>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 flex flex-col">
             <CardHeader>
-              <div className="flex items-center justify-center text-primary mb-2">
-                <Newspaper className="h-10 w-10 mr-3" />
-                <CardTitle className="text-2xl">Stay Tuned!</CardTitle>
+              <div className="flex items-center text-primary mb-2">
+                <MessageSquare className="h-10 w-10 mr-3" />
+                <CardTitle className="text-2xl">NeuraMorphosis Chat v1 Launched!</CardTitle>
               </div>
+              <p className="text-sm text-muted-foreground">November 15, 2023</p> 
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <p className="text-muted-foreground">
-                We're hard at work on exciting new features and products. The Morph Editor is evolving, and other AI innovations are on the horizon. 
-                Check back here for our first official news update soon!
+                We're thrilled to announce the official launch of NeuraMorphosis Chat v1! Engage in intelligent conversations, get instant answers, and experience the power of our advanced NLP-driven chat application.
               </p>
             </CardContent>
           </Card>
-          {/* Future news items can be added here as more Card components */}
-          {/* 
-          Example of another news item:
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
+
+          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 flex flex-col">
             <CardHeader>
-              <div className="flex items-center justify-center text-primary mb-2">
-                <Zap className="h-10 w-10 mr-3" /> // Or another relevant icon
-                <CardTitle className="text-2xl">New Feature Launched!</CardTitle>
+              <div className="flex items-center text-primary mb-2">
+                <Calculator className="h-10 w-10 mr-3" />
+                <CardTitle className="text-2xl">CalcAI v1 is Here!</CardTitle>
               </div>
-              <p className="text-sm text-muted-foreground">October 26, 2023</p> 
+              <p className="text-sm text-muted-foreground">October 28, 2023</p> 
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <p className="text-muted-foreground">
-                We're thrilled to announce the launch of [New Feature Name]. 
-                [Brief description of the feature and its benefits.]
+                Introducing CalcAI v1, your new AI-powered mathematics assistant. Solve complex problems with detailed, step-by-step explanations. Making math more accessible than ever!
               </p>
             </CardContent>
           </Card>
-          */}
+
+          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 flex flex-col">
+            <CardHeader>
+              <div className="flex items-center text-primary mb-2">
+                <Zap className="h-10 w-10 mr-3" /> 
+                <CardTitle className="text-2xl">Morph Editor: Sneak Peek!</CardTitle>
+              </div>
+              <p className="text-sm text-muted-foreground">Coming Soon</p> 
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-muted-foreground">
+                Get ready for Morph Editor! Our next-gen Markdown editor with AI assistance is under active development. Expect smart suggestions, live previews, and much more. Stay tuned for updates!
+              </p>
+            </CardContent>
+          </Card>
+          
+          {/* Add more news items as Card components below */}
+
         </div>
       </div>
     </div>
