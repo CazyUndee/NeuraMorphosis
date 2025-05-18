@@ -52,7 +52,7 @@ export default function HomePage() {
           <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
-                <MessageSquare className="h-10 w-10 mr-3" />
+                <MessageSquare className="h-10 w-10 mr-3 flex-shrink-0" />
                 <CardTitle className="text-2xl">NeuraMorphosis Chat</CardTitle>
               </div>
               <CardDescription>An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.</CardDescription>
@@ -72,7 +72,7 @@ export default function HomePage() {
           <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
-                <Calculator className="h-10 w-10 mr-3" />
+                <Calculator className="h-10 w-10 mr-3 flex-shrink-0" />
                 <CardTitle className="text-2xl">CalcAI</CardTitle>
               </div>
               <CardDescription>Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.</CardDescription>
@@ -92,7 +92,7 @@ export default function HomePage() {
           <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
-                <FileText className="h-10 w-10 mr-3" />
+                <FileText className="h-10 w-10 mr-3 flex-shrink-0" />
                 <CardTitle className="text-2xl">Morph Editor</CardTitle>
               </div>
               <CardDescription>A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!</CardDescription>
