@@ -51,16 +51,11 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-background p-6">
-              <div className="mb-6 flex justify-between items-center">
+              <div className="mb-6 flex justify-start items-center"> {/* Changed justify-between to justify-start */}
                 <Link href="/" onClick={() => setIsOpen(false)}>
                    <Logo className="h-7 w-auto" />
                 </Link>
-                <SheetClose asChild>
-                  <Button variant="ghost" size="icon">
-                    <X className="h-6 w-6" />
-                    <span className="sr-only">Close menu</span>
-                  </Button>
-                </SheetClose>
+                {/* The SheetClose button that was here has been removed */}
               </div>
               <nav className="flex flex-col space-y-3">
                 <NavLinks onItemClick={() => setIsOpen(false)} />
