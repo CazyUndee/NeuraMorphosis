@@ -2,8 +2,32 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { MessageSquare, Calculator, FileText, Brain, Lightbulb, Zap, Newspaper } from 'lucide-react';
+
+const applications = [
+  {
+    title: 'NeuraMorphosis Chat',
+    description: 'An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.',
+    icon: MessageSquare,
+    tryLink: 'https://neuramorph.vercel.app',
+    learnMoreLink: '/chat',
+  },
+  {
+    title: 'CalcAI',
+    description: 'Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.',
+    icon: Calculator,
+    tryLink: 'https://calcai-alpha.vercel.app',
+    learnMoreLink: '/calculator',
+  },
+  {
+    title: 'Morph Editor',
+    description: 'A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!',
+    icon: FileText,
+    tryLink: null,
+    learnMoreLink: '/editor',
+  },
+];
 
 export default function HomePage() {
   return (
@@ -49,60 +73,33 @@ export default function HomePage() {
       <section id="features" className="py-12">
         <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Applications</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
-            <CardHeader>
-              <div className="flex items-center text-primary mb-2">
-                <MessageSquare className="h-10 w-10 mr-3 flex-shrink-0" />
-                <CardTitle className="text-2xl">NeuraMorphosis Chat</CardTitle>
-              </div>
-              <CardDescription>An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.</CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto pt-4">
-              <div className="flex flex-col sm:flex-row gap-2">
-                <Button asChild className="w-full sm:flex-1">
-                  <a href="https://neuramorph.vercel.app" target="_blank" rel="noopener noreferrer">Try Now</a>
-                </Button>
-                <Button asChild className="w-full sm:flex-1" variant="outline">
-                  <Link href="/chat">Learn More</Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
-            <CardHeader>
-              <div className="flex items-center text-primary mb-2">
-                <Calculator className="h-10 w-10 mr-3 flex-shrink-0" />
-                <CardTitle className="text-2xl">CalcAI</CardTitle>
-              </div>
-              <CardDescription>Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.</CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto pt-4">
-              <div className="flex flex-col sm:flex-row gap-2">
-                <Button asChild className="w-full sm:flex-1">
-                  <a href="https://calcai-alpha.vercel.app" target="_blank" rel="noopener noreferrer">Try Now</a>
-                </Button>
-                <Button asChild className="w-full sm:flex-1" variant="outline">
-                  <Link href="/calculator">Learn More</Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
-            <CardHeader>
-              <div className="flex items-center text-primary mb-2">
-                <FileText className="h-10 w-10 mr-3 flex-shrink-0" />
-                <CardTitle className="text-2xl">Morph Editor</CardTitle>
-              </div>
-              <CardDescription>A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!</CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto pt-4">
-              <Button asChild className="w-full" variant="outline">
-                <Link href="/editor">Learn More</Link>
-              </Button>
-            </CardContent>
-          </Card>
+          {applications.map((app) => (
+            <Card key={app.title} className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
+              <CardHeader>
+                <div className="flex items-center text-primary mb-2">
+                  <app.icon className="h-10 w-10 mr-3 flex-shrink-0" />
+                  <CardTitle className="text-2xl">{app.title}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <CardDescription>{app.description}</CardDescription>
+              </CardContent>
+              <CardFooter className="pt-4">
+                <div className="flex flex-col sm:flex-row gap-2 w-full">
+                  {app.tryLink && (
+                    <Button asChild className="w-full sm:flex-1">
+                      <a href={app.tryLink} target="_blank" rel="noopener noreferrer">Try Now</a>
+                    </Button>
+                  )}
+                  {app.learnMoreLink && (
+                    <Button asChild className="w-full sm:flex-1" variant={app.tryLink ? "outline" : "default"}>
+                      <Link href={app.learnMoreLink}>Learn More</Link>
+                    </Button>
+                  )}
+                </div>
+              </CardFooter>
+            </Card>
+          ))}
         </div>
       </section>
 
