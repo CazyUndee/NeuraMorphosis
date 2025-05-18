@@ -15,19 +15,19 @@ export default function HomePage() {
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground">
           Welcome to NeuraMorphosis! We specialize in creating cutting-edge, AI-powered solutions to enhance productivity and spark innovation.
-          This hub is your gateway to our latest projects and tools.
+          This hub is your gateway to our latest tools and applications.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button size="lg" asChild>
             {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
             <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">
-              View AI Chat Project <MessageSquare className="ml-2 h-5 w-5" />
+              View AI Chat <MessageSquare className="ml-2 h-5 w-5" />
             </a>
           </Button>
           <Button size="lg" variant="secondary" asChild>
             {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
             <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">
-              View AI Calculator Project <Calculator className="ml-2 h-5 w-5" />
+              View AI Calculator <Calculator className="ml-2 h-5 w-5" />
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
@@ -49,20 +49,20 @@ export default function HomePage() {
 
       {/* Features Section */}
       <section id="features" className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Applications</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <MessageSquare className="h-10 w-10 mr-3" />
-                <CardTitle className="text-2xl">AI Chat Project</CardTitle>
+                <CardTitle className="text-2xl">AI Chat</CardTitle>
               </div>
               <CardDescription>An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.</CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild className="w-full">
                 {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
-                <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">View Application</a>
               </Button>
             </CardContent>
           </Card>
@@ -71,14 +71,14 @@ export default function HomePage() {
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <Calculator className="h-10 w-10 mr-3" />
-                <CardTitle className="text-2xl">AI Calculator Project</CardTitle>
+                <CardTitle className="text-2xl">AI Calculator</CardTitle>
               </div>
               <CardDescription>Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.</CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild className="w-full">
                 {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
-                <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">View Application</a>
               </Button>
             </CardContent>
           </Card>
