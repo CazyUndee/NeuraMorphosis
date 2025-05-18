@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Logo } from '@/components/icons/Logo';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -51,12 +51,13 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full bg-background p-6">
-              <div className="mb-6 flex justify-start items-center"> {/* Changed justify-between to justify-start */}
+              <SheetHeader className="mb-6 flex justify-start items-center"> {/* Changed justify-between to justify-start */}
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <Link href="/" onClick={() => setIsOpen(false)}>
                    <Logo className="h-7 w-auto" />
                 </Link>
                 {/* The SheetClose button that was here has been removed */}
-              </div>
+              </SheetHeader>
               <nav className="flex flex-col space-y-3">
                 <NavLinks onItemClick={() => setIsOpen(false)} />
               </nav>
