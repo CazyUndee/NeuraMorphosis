@@ -7,7 +7,7 @@ import { Construction, Sparkles, Eye, Code, BrainCircuit } from 'lucide-react';
 export default function MDEditorComingSoonPage() {
   return (
     <div className="max-w-4xl mx-auto flex flex-col items-center justify-center min-h-[calc(100vh-15rem)] py-10">
-      <Card className="shadow-xl w-full text-center bg-card/80 backdrop-blur-sm">
+      <Card className="shadow-xl w-full text-center bg-card/80 backdrop-blur-sm flex flex-col flex-grow">
         <CardHeader className="pb-4">
            <div className="flex items-center justify-center mb-6">
             <Construction className="h-20 w-20 text-primary animate-bounce" />
@@ -19,7 +19,7 @@ export default function MDEditorComingSoonPage() {
             Get ready for a revolutionary Markdown editing experience! We're meticulously crafting a powerful tool designed to supercharge your writing and documentation workflow.
           </CardDescription>
         </CardHeader>
-        <CardContent className="pt-2">
+        <CardContent className="pt-2 flex flex-col flex-grow justify-around">
           <div className="mt-6 space-y-8">
             <h3 className="text-2xl font-semibold text-foreground mb-6">Here's a Sneak Peek of What's Coming:</h3>
             
