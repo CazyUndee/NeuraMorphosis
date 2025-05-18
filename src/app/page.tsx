@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="space-y-16 md:space-y-24">
       {/* Hero Section */}
       <section className="text-center py-12 md:py-20">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-foreground">
           Neura<span className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Morphosis</span>
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground">
