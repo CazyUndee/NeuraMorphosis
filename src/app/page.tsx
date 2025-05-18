@@ -51,7 +51,7 @@ export default function HomePage() {
       <section id="features" className="py-12">
         <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Applications</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
+          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <MessageSquare className="h-10 w-10 mr-3" />
@@ -59,7 +59,7 @@ export default function HomePage() {
               </div>
               <CardDescription>An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="mt-auto">
               <Button asChild className="w-full">
                 {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
                 <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
@@ -67,7 +67,7 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
+          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <Calculator className="h-10 w-10 mr-3" />
@@ -75,7 +75,7 @@ export default function HomePage() {
               </div>
               <CardDescription>Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="mt-auto">
               <Button asChild className="w-full">
                 {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
                 <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
@@ -83,7 +83,7 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300">
+          <Card className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <FileText className="h-10 w-10 mr-3" />
@@ -91,7 +91,7 @@ export default function HomePage() {
               </div>
               <CardDescription>A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="mt-auto">
               <Button asChild className="w-full" variant="outline">
                 <Link href="/editor">Learn More (Coming Soon)</Link>
               </Button>
