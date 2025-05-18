@@ -56,17 +56,7 @@ export default function HomePage() {
             <Link href="/editor">Morph Editor (Coming Soon) <FileText className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
-        <div className="mt-12 relative aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
-          <Image 
-            src="https://placehold.co/1200x675.png" 
-            alt="Abstract AI visualization" 
-            fill
-            style={{objectFit: "cover"}}
-            data-ai-hint="abstract ai"
-            priority
-          />
-           <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
-        </div>
+        {/* Placeholder image removed from here */}
       </section>
 
       {/* Features Section */}
