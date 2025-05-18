@@ -72,7 +72,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section id="features" className="py-12">
         <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Applications</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {applications.map((app) => (
             <Card key={app.title} className="shadow-lg hover:shadow-primary/30 transition-shadow duration-300 h-full flex flex-col">
               <CardHeader>
