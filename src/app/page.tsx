@@ -21,13 +21,13 @@ export default function HomePage() {
           <Button size="lg" asChild>
             {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
             <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">
-              View AI Chat <MessageSquare className="ml-2 h-5 w-5" />
+              NeuraMorphosis Chat <MessageSquare className="ml-2 h-5 w-5" />
             </a>
           </Button>
           <Button size="lg" variant="secondary" asChild>
             {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
             <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">
-              View AI Calculator <Calculator className="ml-2 h-5 w-5" />
+              CalcAI <Calculator className="ml-2 h-5 w-5" />
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
@@ -55,14 +55,14 @@ export default function HomePage() {
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <MessageSquare className="h-10 w-10 mr-3" />
-                <CardTitle className="text-2xl">AI Chat</CardTitle>
+                <CardTitle className="text-2xl">NeuraMorphosis Chat</CardTitle>
               </div>
               <CardDescription>An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.</CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild className="w-full">
                 {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
-                <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">View Application</a>
+                <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
               </Button>
             </CardContent>
           </Card>
@@ -71,14 +71,14 @@ export default function HomePage() {
             <CardHeader>
               <div className="flex items-center text-primary mb-2">
                 <Calculator className="h-10 w-10 mr-3" />
-                <CardTitle className="text-2xl">AI Calculator</CardTitle>
+                <CardTitle className="text-2xl">CalcAI</CardTitle>
               </div>
               <CardDescription>Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.</CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild className="w-full">
                 {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
-                <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">View Application</a>
+                <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
               </Button>
             </CardContent>
           </Card>
