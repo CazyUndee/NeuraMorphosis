@@ -11,7 +11,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 
 const navItems = [
   { href: '/', label: 'Home' },
-  { href: '/#news', label: 'News' },
+  { href: '/news', label: 'News' },
   { href: '/editor', label: 'Morph Editor (Soon)' },
 ];
 
@@ -54,7 +54,6 @@ export function Header() {
                 <Link href="/" onClick={() => setIsOpen(false)}>
                    <Logo className="h-7 w-auto" />
                 </Link>
-                {/* Added sr-only title for accessibility as per previous fix */}
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col space-y-3">
