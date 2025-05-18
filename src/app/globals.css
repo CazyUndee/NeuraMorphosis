@@ -4,42 +4,42 @@
 
 @layer base {
   :root {
-    --background: 0 0% 15%; /* Dark Gray, adjusted for card contrast */
-    --foreground: 0 0% 98%; /* Light text */
+    --background: 270 50% 12%; /* Deep Rich Purple */
+    --foreground: 270 15% 90%; /* Light Lavender Text */
 
-    --card: 0 0% 20%; /* Dark Gray #333333 for cards */
-    --card-foreground: 0 0% 98%;
+    --card: 270 40% 18%; /* Darker Purple for Cards */
+    --card-foreground: 270 15% 90%; /* Light Lavender Text */
 
-    --popover: 0 0% 20%; /* Dark Gray #333333 for popovers */
-    --popover-foreground: 0 0% 98%;
+    --popover: 270 40% 16%; /* Slightly darker purple for popovers */
+    --popover-foreground: 270 15% 90%; /* Light Lavender Text */
 
-    --primary: 262 52% 47%; /* Deep Purple #673AB7 */
-    --primary-foreground: 0 0% 98%; /* White text on purple */
+    --primary: 280 85% 60%; /* Vibrant Magenta-leaning Purple */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
 
-    --secondary: 0 0% 25%; /* Lighter dark gray for secondary elements */
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 275 50% 40%; /* Muted Purple for secondary elements */
+    --secondary-foreground: 270 15% 90%; /* Light Lavender Text */
 
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 60%; /* Lighter gray for muted text */
+    --muted: 270 30% 28%; /* Desaturated Purple for muted elements */
+    --muted-foreground: 270 15% 70%; /* Slightly darker Lavender for muted text */
 
-    --accent: 259 100% 66%; /* Electric Violet #8C52FF */
-    --accent-foreground: 0 0% 98%; /* White text on violet */
+    --accent: 290 90% 68%; /* Bright Pinkish-Purple Accent */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    --destructive: 0 63% 31%; 
+    --destructive: 0 63% 45%; /* Adjusted Red for better contrast on purple */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 28%; /* Border for dark theme */
-    --input: 0 0% 28%; /* Input background for dark theme */
-    --ring: 259 100% 70%; /* Ring color based on accent */
+    --border: 270 35% 30%; /* Purple Border */
+    --input: 270 35% 22%; /* Purple Input Background */
+    --ring: 280 85% 65%; /* Ring color based on primary */
 
     --radius: 0.5rem;
 
-    /* Chart colors can remain or be adjusted if charts are used */
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    /* Chart colors adjusted for a purple theme */
+    --chart-1: 280 70% 55%; /* Purple variant 1 */
+    --chart-2: 290 60% 50%; /* Purple variant 2 */
+    --chart-3: 270 80% 60%; /* Purple variant 3 */
+    --chart-4: 300 65% 58%; /* Pinkish-Purple variant */
+    --chart-5: 260 75% 52%; /* Bluish-Purple variant */
   }
 }
 
