@@ -11,7 +11,6 @@ export default function MorphEditorFeatureOverviewPage() {
     <div className="max-w-5xl mx-auto flex flex-col min-h-[calc(100vh-15rem)] py-10 space-y-12">
       <header className="text-center">
         <div className="flex items-center justify-center mb-6">
-          <BookOpen className="h-16 w-16 text-primary mr-4" />
           <Construction className="h-20 w-20 text-accent animate-bounce" />
         </div>
         <h1 className="text-4xl font-bold text-primary mb-3">
