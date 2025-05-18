@@ -1,10 +1,12 @@
 
 'use client';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Construction, Sparkles, Eye, Code, BrainCircuit, BookOpen } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Construction, Sparkles, Eye, Code, BrainCircuit, BookOpen, FileText } from 'lucide-react';
 
-export default function MorphEditorDocumentationPage() {
+export default function MorphEditorFeatureOverviewPage() {
   return (
     <div className="max-w-5xl mx-auto flex flex-col min-h-[calc(100vh-15rem)] py-10 space-y-12">
       <header className="text-center">
@@ -86,8 +88,14 @@ export default function MorphEditorDocumentationPage() {
           We're pouring all our expertise into Morph Editor!
         </p>
         <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-          This page will evolve into comprehensive documentation upon launch. Expect detailed guides, API references (if applicable), and best practices.
+          This page offers a glimpse. For a deeper dive into our technical vision and planned architecture, check out our preliminary documentation.
         </p>
+        <Button asChild size="lg" className="mt-6">
+          <Link href="/editor/docs">
+            <FileText className="mr-2 h-5 w-5" />
+            View Technical Documentation Preview
+          </Link>
+        </Button>
         <div className="mt-8 flex justify-center items-center space-x-2">
           <Sparkles className="h-10 w-10 text-primary animate-pulse" />
           <p className="text-2xl font-bold text-primary">Stay Tuned for Launch!</p>
