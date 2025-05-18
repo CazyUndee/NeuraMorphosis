@@ -69,12 +69,6 @@ export default function TermsOfServicePage() {
             <p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at: contact.neuramorphosis@gmail.com.</p>
           </section>
           
-          <div className="pt-6 text-center">
-            <p className="text-sm text-foreground">
-              <strong>Disclaimer:</strong> This is a template Terms of Service and should be reviewed by a legal professional before publication.
-            </p>
-          </div>
-
           <div className="flex justify-center pt-8">
             <Button asChild variant="outline" size="lg">
               <Link href="/">

@@ -76,12 +76,6 @@ export default function PrivacyPolicyPage() {
             <p>If you have questions or comments about this notice, you may email us at contact.neuramorphosis@gmail.com.</p>
           </section>
           
-          <div className="pt-6 text-center">
-            <p className="text-sm text-foreground">
-              <strong>Disclaimer:</strong> This is a template Privacy Policy and should be reviewed by a legal professional before publication.
-            </p>
-          </div>
-
           <div className="flex justify-center pt-8">
             <Button asChild variant="outline" size="lg">
               <Link href="/">

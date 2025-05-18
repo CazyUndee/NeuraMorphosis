@@ -50,12 +50,6 @@ export default function CookiePolicyPage() {
             <p className="mt-2">If you are still looking for more information, then you can contact us through our preferred contact methods: Email: contact.neuramorphosis@gmail.com</p>
           </section>
 
-          <div className="pt-6 text-center">
-            <p className="text-sm text-foreground">
-              <strong>Disclaimer:</strong> This is a template Cookie Policy and should be reviewed by a legal professional before publication.
-            </p>
-          </div>
-
           <div className="flex justify-center pt-8">
             <Button asChild variant="outline" size="lg">
               <Link href="/">
