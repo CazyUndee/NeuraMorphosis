@@ -59,11 +59,16 @@ export default function HomePage() {
               </div>
               <CardDescription>An advanced NLP-powered chat application. Engage in intelligent conversations and get real-time assistance.</CardDescription>
             </CardHeader>
-            <CardContent className="mt-auto">
-              <Button asChild className="w-full">
-                {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
-                <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
-              </Button>
+            <CardContent className="mt-auto pt-4">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <Button asChild className="w-full sm:flex-1">
+                  {/* TODO: Replace #_PROJECT_CHAT_URL with the actual URL to your chat project */}
+                  <a href="#_PROJECT_CHAT_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
+                </Button>
+                <Button asChild className="w-full sm:flex-1" variant="outline">
+                  <Link href="/chat">Learn More</Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
 
@@ -75,11 +80,16 @@ export default function HomePage() {
               </div>
               <CardDescription>Solve complex mathematical problems with step-by-step explanations, powered by intelligent AI algorithms.</CardDescription>
             </CardHeader>
-            <CardContent className="mt-auto">
-              <Button asChild className="w-full">
-                {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
-                <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
-              </Button>
+            <CardContent className="mt-auto pt-4">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <Button asChild className="w-full sm:flex-1">
+                  {/* TODO: Replace #_PROJECT_CALCULATOR_URL with the actual URL to your calculator project */}
+                  <a href="#_PROJECT_CALCULATOR_URL" target="_blank" rel="noopener noreferrer">Try Now</a>
+                </Button>
+                <Button asChild className="w-full sm:flex-1" variant="outline">
+                  <Link href="/calculator">Learn More</Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
 
@@ -91,9 +101,9 @@ export default function HomePage() {
               </div>
               <CardDescription>A powerful markdown editor with live preview. AI-powered content suggestions are planned for the future!</CardDescription>
             </CardHeader>
-            <CardContent className="mt-auto">
+            <CardContent className="mt-auto pt-4">
               <Button asChild className="w-full" variant="outline">
-                <Link href="/editor">Learn More (Coming Soon)</Link>
+                <Link href="/editor">Learn More</Link>
               </Button>
             </CardContent>
           </Card>
