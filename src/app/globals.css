@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,6 +41,8 @@
     --chart-3: 270 80% 60%; /* Purple variant 3 */
     --chart-4: 300 65% 58%; /* Pinkish-Purple variant */
     --chart-5: 260 75% 52%; /* Bluish-Purple variant */
+
+    /* --font-outfit and --font-geist-mono are defined by next/font */
   }
 }
 
@@ -48,7 +51,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-outfit), sans-serif;
+    @apply bg-background text-foreground font-sans; /* This will now correctly use Outfit */
   }
 }
