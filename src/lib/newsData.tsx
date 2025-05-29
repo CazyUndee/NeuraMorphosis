@@ -36,7 +36,7 @@ export const newsItems: NewsItem[] = [
     date: '2025-04-20',
     title: 'NeuraMorphosis Chat Enters Public Beta!',
     content: (
-      <p>Exciting news! NeuraMorphosis Chat is now available for public beta testing. Your feedback during this phase will be invaluable in refining the experience before the official launch. Head over to <a href="https://morph-chat-nu.vercel.app" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">morph-chat-nu.vercel.app</a> to try it out!</p>
+      <p>Exciting news! NeuraMorphosis Chat is now available for public beta testing. Your feedback during this phase will be invaluable in refining the experience before the official launch. Head over to <a href="https://morph-chat-mu.vercel.app" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">morph-chat-mu.vercel.app</a> to try it out!</p>
     ),
   },
   // CalcAI

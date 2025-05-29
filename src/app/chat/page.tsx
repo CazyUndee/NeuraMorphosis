@@ -48,7 +48,7 @@ export default function ChatInfoPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-6">
             <Button asChild size="lg" className="flex-1">
-              <a href="https://morph-chat-nu.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+              <a href="https://morph-chat-mu.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                 <MessageSquare className="mr-2 h-5 w-5" /> Try NeuraMorphosis Chat Now
               </a>
             </Button>

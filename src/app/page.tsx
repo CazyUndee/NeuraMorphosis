@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { MessageSquare, Calculator, Construction, Brain, Lightbulb, Zap, Mail } from 'lucide-react';
+import { MessageSquare, Calculator, Construction, Brain, Lightbulb, Zap, Mail, Newspaper } from 'lucide-react';
 
 const applications = [
   {
     title: 'NeuraMorphosis Chat',
     description: "Engage with NeuraMorphosis Chat, your intelligent AI companion! Experience natural, multi-turn conversations, get instant answers to your queries, and let its broad knowledge base help you brainstorm new ideas or assist with tasks. It's designed for intuitive interaction and real-time support.",
     icon: MessageSquare,
-    tryLink: 'https://morph-chat-nu.vercel.app',
+    tryLink: 'https://morph-chat-mu.vercel.app',
     learnMoreLink: '/chat',
   },
   {
@@ -43,7 +43,7 @@ export default function HomePage() {
         </p>
         <div className="mt-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
           <Button size="lg" asChild>
-            <a href="https://morph-chat-nu.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://morph-chat-mu.vercel.app" target="_blank" rel="noopener noreferrer">
               NeuraMorphosis Chat <MessageSquare className="ml-2 h-5 w-5" />
             </a>
           </Button>
